@@ -21,7 +21,7 @@ from django.contrib.staticfiles.urls import static, staticfiles_urlpatterns
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('api/', include('team_todo.urls')),
+    path('', include('team_todo.urls')),
 ]
 
 urlpatterns += staticfiles_urlpatterns()
